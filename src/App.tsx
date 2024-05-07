@@ -6,6 +6,27 @@ import CardCountry from "./Components/Result/CountryCard";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CountryPage from "./Components/CountryPage";
 
+interface Country {
+  name: {
+    common: string;
+  };
+  region: string;
+}
+
+interface Country {
+  name: {
+    common: string;
+  };
+  flags: {
+    png: string;
+    // Add other flag properties if necessary
+  };
+  population: number;
+  region: string;
+  capital: string;
+  // Add other properties as needed
+}
+
 function App() {
   // DARK MODE THEME
   const [theme, setTheme] = useState("light");
@@ -17,20 +38,21 @@ function App() {
 
   // console.log(theme);
 
-  const [countryinfo, Setcountryinfo] = useState([]);
-  const [originalcountryinfo, setOriginalcountryinfo] = useState([]);
+  const [countryinfo, Setcountryinfo] = useState<Country[]>([]);
+  const [originalcountryinfo, setOriginalcountryinfo] = useState<Country[]>([]);
+
   // INPUT [FOR FILTER BY COUNTRY]
   const [userValue, setUservalue] = useState("");
   // SELECT [FOR FILTER BY REGION]
   const [selectValue, setSelectValue] = useState("");
 
   // CALLBACKFUNCTION
-  const dataUser = (value) => {
+  const dataUser = (value: string) => {
     setUservalue(value);
   };
 
   // CALLBACKFUNCTION FOR SELECT VALUE
-  const slectUser = (valueSelect) => {
+  const slectUser = (valueSelect: string) => {
     setSelectValue(valueSelect);
   };
 

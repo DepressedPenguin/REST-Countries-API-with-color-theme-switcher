@@ -1,7 +1,12 @@
 import { useState } from "react";
 import styles from "./countryfilter.module.scss";
 
-export default function FilterCountry({ value, theme }) {
+interface FilterCountryProps {
+  value: (value: string) => void;
+  theme: string;
+}
+
+export default function FilterCountry({ value, theme }: FilterCountryProps) {
   //
   const [userinput, setUserinput] = useState("");
   value(userinput);

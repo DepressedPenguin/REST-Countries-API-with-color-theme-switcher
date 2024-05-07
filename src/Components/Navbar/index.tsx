@@ -1,7 +1,12 @@
 import styles from "./navbar.module.scss";
 import "../DarkMode/darkmode.scss";
 
-export default function Navbar({ themeHandler, theme }) {
+interface PropsTheme {
+  themeHandler: () => void;
+  theme: string;
+}
+
+export default function Navbar({ themeHandler, theme }: PropsTheme) {
   return (
     <>
       <header className={`${theme} ${styles.main_navbar}`}>

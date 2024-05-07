@@ -2,7 +2,13 @@ import FilterCountry from "../CountryFilter";
 import FilterRegion from "../RegionFilter";
 import styles from "./filter.module.scss";
 
-export default function Filter({ value, valueSelect, theme }) {
+interface FilterProps {
+  value: (value: string) => void;
+  valueSelect: (valueSelect: string) => void; // Corrected type
+  theme: string;
+}
+
+export default function Filter({ value, valueSelect, theme }: FilterProps) {
   return (
     <>
       <div className={`${theme}`}>
@@ -11,6 +17,7 @@ export default function Filter({ value, valueSelect, theme }) {
             <FilterCountry theme={theme} value={value} />
           </div>
           <div className={styles.filter_country_region}>
+            {/* Ensure valueSelect is called as a function */}
             <FilterRegion theme={theme} valueSelect={valueSelect} />
           </div>
         </div>
