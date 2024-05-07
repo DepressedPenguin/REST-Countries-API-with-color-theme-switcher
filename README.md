@@ -56,3 +56,5 @@
   <p>For any inquiries or feedback, please contact <a href="mailto:zakariaelaro@gmail.com">zakariaelaro@gmail.com</a>.</p>
 </body>
 </html>
+![Where in the world?](https://raw.githubusercontent.com/DepressedPenguin/REST-Countries-API-with-color-theme-switcher/master/src/where%20in%20the%20wor.png)
+
