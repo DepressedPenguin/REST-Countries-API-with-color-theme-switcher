@@ -1,0 +1,26 @@
+// .SCSS FILE FOR DARK MODE
+// LIGHT MODE
+.light {
+  .background {
+    background-color: white;
+    transition: 1s;
+  }
+
+  .text {
+    color: #191919;
+    transition: 1s;
+  }
+}
+
+// DAKR MODE
+.dark {
+  .background {
+    background-color: #191919;
+    transition: 1s;
+  }
+
+  .text {
+    color: white;
+    transition: 1s;
+  }
+}

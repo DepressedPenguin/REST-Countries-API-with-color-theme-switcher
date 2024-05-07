@@ -1,0 +1,67 @@
+// SCSS FILE FOR NAVBAR
+.main_navbar {
+  //   border: 1px solid red;
+  border-bottom: 2px solid grey;
+  box-shadow: 2px 1px 2px grey;
+}
+
+.sub_nav {
+  width: 95%;
+  margin: auto;
+  //   border: 1px solid gold;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+// LOGO PLACE
+.two_side_logo {
+  //   border: 1px solid red;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  h1 {
+    font-weight: 800;
+    font-size: 30px;
+  }
+}
+
+// DARK MODE
+.two_side_darkmode {
+  //   border: 1px solid red;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  gap: 10px;
+
+  p {
+    font-size: 19px;
+    font-weight: 700;
+  }
+}
+
+.icon_darkmode {
+  // border: 1px solid black;
+  cursor: pointer;
+
+  i {
+    font-size: 25px;
+  }
+}
+
+.moon_icon {
+  color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+  .sub_nav {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    // border: 1px solid red;
+    text-align: center;
+    justify-items: center;
+  }
+}

@@ -1,0 +1,42 @@
+// SCSS FILE FOR THE FILTER
+.main_filter {
+  // border: 1px solid red;
+  width: 100%;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 10px;
+}
+
+// filter_country_name
+.filter_country_name {
+  // border: 1px solid black;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+// filter_country_region
+.filter_country_region {
+  // border: 1px solid black;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main_filter {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    // border: 1px solid red;
+    text-align: center;
+    justify-items: center;
+  }
+}

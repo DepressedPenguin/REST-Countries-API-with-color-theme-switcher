@@ -1,0 +1,25 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Nunito Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.main_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    /* border: 1px solid red; */
+    text-align: center;
+    justify-items: center;
+  }
+}

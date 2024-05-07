@@ -1,0 +1,33 @@
+.input_country_filter {
+  width: calc(100% - 50px);
+  height: 55px;
+  border-radius: 5px;
+  font-size: 20px;
+  // border: 1px solid grey;
+  border: none;
+  box-shadow: 1px 1px 5px grey;
+  padding-left: 45px;
+  background: url("/src/assets/imgs/search_icon.png") no-repeat 10px center; /* Set icon as background */
+  background-size: 30px;
+}
+
+// padding-left: 45px;
+//   background: url("/src/assets/imgs/search_icon.png") no-repeat 10px center; /* Set icon as background */
+// LATER ADD IF TO REMOVE OR SET PADDINT LEFT TO 0 AND REMOVE BACKGROUND IMG
+// ONLY WHEN USE WANT TYPE SOMETHING TOGGLE
+
+.input_country_filter::placeholder {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.container_input {
+  width: 100%;
+  position: relative;
+}
+
+@media only screen and (max-width: 1200px) {
+  .input_country_filter {
+    width: 100%;
+  }
+}
